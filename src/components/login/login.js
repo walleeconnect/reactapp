@@ -30,7 +30,7 @@ function Login() {
     ?.split("=")[1])   
     await axios({
       method: "post",
-      url: "http://127.0.0.1:8000/api/v1/movies/",
+      url: "https://backend123-be3a2ceefa80.herokuapp.com/api/v1/movies/",
       data: bodyFormData2,
       withCredentials: false,
       headers: { 
@@ -54,7 +54,7 @@ function Login() {
     console.log(`Form submitted, ${name}`);    
     await axios({
       method: "post",
-      url: "http://127.0.0.1:8000/api/v1/auth/token/",
+      url: "https://backend123-be3a2ceefa80.herokuapp.com/api/v1/auth/token/",
       data: bodyFormData,
       withCredentials: false,
       headers: { 
